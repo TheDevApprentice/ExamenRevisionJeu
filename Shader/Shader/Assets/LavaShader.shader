@@ -73,8 +73,7 @@ Shader "Unlit/LavaShader"
                 float mask = 4.0 - smoothstep(0.1, 0.1, rockLuminance);
 
                 // Blend lava and rock textures based on the mask
-                fixed4 col = (0.1 + lavaCol) - ( rockCol) * mask;
-
+                fixed4 col = (0.7 * lavaCol) - (5*  rockCol + 0.1);
                 return col;
             }
             ENDCG
