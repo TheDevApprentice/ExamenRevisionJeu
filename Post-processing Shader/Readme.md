@@ -1,5 +1,15 @@
 # Question 2 - Post-processing Shader
 
+1. Créez un shader `Image Effect Shader` nommé `ShaderAim`.
+2. Ajoutez/modifiez le nécessaire pour que votre shader ait les [propriétés](https://docs.unity3d.com/Manual/SL-Properties.html) suivantes :
+    1. Texture nommée `_MainTex`.
+    2. Texture nommée `_AimTexture`.
+        1. Utilisez cette texture pour modifier l’image et obtenir le résultat ci-dessous.
+3. Créez un script nommé `AimPostProcessing`.
+    1. Ajoutez le script à la caméra.
+    2. Doit s’exécuter sans être en mode `Play`.
+    3. Doit appliquer le shader à l’image de la caméra.
+
 ```c#
 Shader "Custom/ShaderAim"
 {
