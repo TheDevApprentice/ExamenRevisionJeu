@@ -702,7 +702,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 5.7
+  field of view: 16.9
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -728,13 +728,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.32, y: -0.03, z: -10}
+  m_LocalRotation: {x: 0.016317604, y: 0.9753349, z: 0.03074685, w: 0.21796872}
+  m_LocalPosition: {x: -2.137, y: 0.223, z: 4.282}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Father: {fileID: 1521449530}
+  m_LocalEulerAnglesHint: {x: -3.03, y: 154.736, z: 2.596}
 --- !u!1 &1276022554
 GameObject:
   m_ObjectHideFlags: 0
@@ -1288,7 +1288,7 @@ Transform:
   m_GameObject: {fileID: 1507932005}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.309, y: -0.016, z: -0.832}
+  m_LocalPosition: {x: 0.025, y: -0.021, z: -0.744}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1323,7 +1323,7 @@ Transform:
   m_GameObject: {fileID: 1521449529}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.36698866, y: 0.023, z: -1.2661943}
+  m_LocalPosition: {x: 0.36698866, y: 0.02, z: -1.2661943}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1332,6 +1332,7 @@ Transform:
   - {fileID: 2066913781}
   - {fileID: 1943584037}
   - {fileID: 1507932006}
+  - {fileID: 963194228}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &1521449531
@@ -1342,7 +1343,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1521449529}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 0.28
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -1375,7 +1376,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 100
   forwardForce: 50
-  smokeParticlesPrefab: {fileID: 0}
+  smokeParticlesPrefab: {fileID: 7698635295540353846, guid: db39eacd13322884bb3384e6c7f24d0f, type: 3}
+  smokeParticlesParent: {fileID: 1521449530}
 --- !u!1 &1943584036
 GameObject:
   m_ObjectHideFlags: 0
@@ -1662,7 +1664,6 @@ MeshFilter:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 963194228}
   - {fileID: 705507995}
   - {fileID: 1497395412}
   - {fileID: 1521449530}
