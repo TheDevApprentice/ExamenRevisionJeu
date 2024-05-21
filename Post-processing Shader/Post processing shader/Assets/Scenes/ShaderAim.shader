@@ -3,7 +3,7 @@ Shader "Custom/ShaderAim"
     Properties
     {
         _MainTex ("Base (RGB)", 2D) = "white" {}
-        _AimTexture ("Aim Texture", 2D) = "black" {}
+        _AimTexture ("Aim Texture", 2D) = "white" {}
         _BlendFactor ("Blend Factor", Range(0, 1)) = 1
     }
     SubShader
@@ -44,10 +44,10 @@ Shader "Custom/ShaderAim"
                 half4 color = tex2D(_MainTex, i.uv);
                 half4 aim = tex2D(_AimTexture, i.uv);
 
-                float blackIntensity = 1.0 * dot(aim.rgb, float3(0.299, 0.587, 0.114));
+                float blackIntensity = dot(aim.rgb, float3(0.299, 0.587, 0.114));
                 float alpha = (blackIntensity * _BlendFactor);
 
-                return color - aim * 1.5; 
+                return lerp(color * 1, aim * -1, alpha);
             }
             ENDCG
         }
